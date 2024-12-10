@@ -81,12 +81,6 @@ header a{
     padding-right: 30%;
     box-sizing: border-box;
     color: #c90101;
-    text-shadow: 
-    0 0 5px rgb(0, 255, 255), 
-    0 0 10px #0ff, 
-    0 0 20px #00ffff, 
-    0 0 30px #000000; /* Efecto de brillo */
-    
 }
 .carousel .list .item .author{
     font-weight: bold;
