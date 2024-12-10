@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de compra</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> <!-- Librería jsPDF -->
+</head>
+<body>
+    <h1>Confirmación de compra</h1>
+    <table id="tabla-compra">
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Título</th>
+                <th>Precio Unitario</th>
+                <th>Cantidad</th>
+                <th>Precio Total</th>
+            </tr>
+        </thead>
+        <tbody id="productos-compra"></tbody>
+    </table>
+
+    <div>
+        <h3 id="total-compra">Total: $0.00</h3>
+    </div>
+
+    <button id="pagar-btn" class="btn btn-success">Pagar</button>
+
+    <script src="pago.js"></script>
+</body>
+</html>

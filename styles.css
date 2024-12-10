@@ -1,0 +1,332 @@
+html {
+    overscroll-behavior: none;
+}
+
+::-webkit-scrollbar {
+    display: block; /* Muestra el scrollbar */
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(image/ne1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-color: purple; 
+}
+
+.img1 {
+    text-align: left;
+}
+
+.img1 img {
+    display: block;
+    margin: 0; 
+    float: left; 
+}
+
+
+.img2 {
+    text-align: center; 
+}
+
+.img2 img {
+    display: block; 
+    margin: 0 auto; 
+}
+
+.img3 {
+    text-align: right;
+}
+
+.img3 img {
+    display: block;
+    margin: 0; 
+    float: right; 
+}
+
+html, body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 50%;
+}
+
+img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 2em;
+    width: 18px;
+    height: 18px;
+    background: red;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.header {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 100%;
+    z-index: 1;
+}
+
+.letters {
+    flex: 1;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.letters > div {
+    flex: 1;
+    font-size: 18vw;
+    font-weight: 400;
+    color: rgb(0, 255, 255);  
+    text-align: center;
+    text-shadow: 
+        0 0 30px rgb(153, 0, 255);   
+  
+}
+
+
+.website-content {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.img-holder {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(5, 2, 146);
+    clip-path: polygon(37.5% 20%, 62.5% 20%, 62.5% 80%, 37.5% 80%);
+    transform: rotate(30deg);
+}
+
+.img-holder img {
+    position: absolute;  /* Esto asegura que la imagen se ajuste al contenedor */
+    top: 0;
+    left: 0;
+    width: 100%;   /* La imagen se ajustará a todo el ancho */
+    height: 100%;  /* La imagen se ajustará a toda la altura */
+    object-fit: cover;  /* Hace que la imagen cubra el área sin distorsionarse */
+    object-position: center;  /* Asegura que la imagen esté centrada */
+}
+
+
+.content-holder {
+    position: relative;
+    top: -5px;
+    width: 100%;
+    background: black;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+}
+
+.row {
+    margin: 2em 1em;
+}
+
+.img {
+    width: 200px;
+    height: 275px;
+}
+
+.row:nth-child(2) .img {
+    position: relative;
+    left: 50%;
+}
+
+.row:nth-child(3) .img {
+    position: relative;
+    left: 15%;
+}
+
+.row:nth-child(4) .img {
+    position: relative;
+    left: 70%;
+}
+
+.row:nth-child(6) .img {
+    position: relative;
+    left: 30%;
+    margin: 4em 0;
+}
+
+/* Diseño de la página */
+.neon-text1 {
+    text-decoration: underline;
+    font-size: 3rem;  /* Tamaño del texto */
+    font-weight: bold;  /* Hace que el texto sea más grueso */
+    color: #fff;  /* Color principal del texto */
+    text-shadow: 
+        0 0 5px #ff00ff,  
+        0 0 10px #ff00ff, 
+        0 0 15px #ff00ff, 
+        0 0 20px #ff00ff, 
+        0 0 25px #ff00ff, 
+        0 0 30px #ff00ff, 
+        0 0 35px #ff00ff;
+}
+
+h1 {
+    text-decoration: underline;
+    color: rgb(0, 255, 34);
+    font-weight: bolder;
+}
+
+.neon-text2 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 
+        0 0 5px #00eeff, 
+        0 0 10px #00eeff, 
+        0 0 15px #00eeff, 
+        0 0 20px #00eeff, 
+        0 0 25px #00eeff, 
+        0 0 30px #00eeff, 
+        0 0 35px #00eeff;
+}
+
+.neon-text3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 
+        0 0 5px #ff0000, 
+        0 0 10px #ff0000, 
+        0 0 15px #ff0000, 
+        0 0 20px #ff0000, 
+        0 0 25px #ff0000, 
+        0 0 30px #ff0000, 
+        0 0 35px #ff0000;
+}
+
+/* Efectos en las tarjetas */
+.card {
+    height: fit-content;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: cyan;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(248, 15, 15, 0.5);
+}
+
+.card img {
+    height: 600px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Botón de agregar al carrito */
+.add-to-cart {
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Fondo del carrito */
+#cart-items {
+    min-width: 200px;
+}
+
+#cart-count {
+    font-size: 0.9rem;
+}
+
+/* Animaciones y transiciones */
+.hover-shadow-lg:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de la barra de navegación */
+nav.navbar {
+    z-index: 1050; /* Asegura que la navbar esté por encima de otros elementos */
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo semitransparente para mejor visibilidad */
+}
+
+nav.navbar img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Footer */
+footer {
+    background-color: #300455;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alert {
+    background-color: red;
+    color: black;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    font-size: 24px;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    color: #00c9ed; /* Cambia el color al pasar el ratón (ejemplo: azul claro) */
+}
+
+

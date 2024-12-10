@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Menu principal</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="productos.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#zapa">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="text-decoration-none text-light" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-cart fs-4"></i>
+                        <span id="cart-count" class="badge bg-danger">0</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end p-2 shadow" id="cart-items">
+                        <li class="dropdown-item text-center" id="empty-cart-message">El carrito está vacío</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="logo"></div>
+    <div class="header">
+        <div class="letters">
+            <div>S</div>
+            <div>H</div>
+            <div>A</div>
+            <div>D</div>
+        </div>
+        <div class="letters">
+            <div>S</div>
+            <div>T</div>
+            <div>O</div>
+            <div>R</div>
+            <div>E</div>
+        </div>
+    </div>
+    <div class="website-content">
+        <div class="img-holder">
+            <img src="image/Y1.jpg" alt="" />
+        </div>
+
+        <div class="content-holder">
+            <div class="row">
+                <h1></h1>
+            </div>
+
+            <div class="row">
+                <div class="img1">
+                    <img src="image/x1.jpg" alt="Image">
+                </div>
+            </div>
+            <div class="row">
+                <div class="img2">
+                    <img src="image/x2.png" alt="Image">
+                </div>
+            </div>
+            <div class="row">
+                <div class="img3">
+                    <img src="image/x3.jpg" alt="Image">
+                </div>
+            </div>
+    <main class="container mt-5">
+        <section class="intro">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h2 class="neon-text1">Zapatillas Deportivas</h2>
+                    <p class="neon-text2">En nuestra tienda ofrecemos las mejores zapatillas de marcas reconocidas, diseñadas para ofrecerte comodidad y estilo. Ya sea para correr, caminar o para el día a día, tenemos el modelo perfecto para ti.</p>
+                    <p class="neon-text3">Explora nuestra variedad de zapatillas deportivas, casuales y de moda. Cada par está diseñado para satisfacer tus necesidades de confort, durabilidad y estética. ¡Encuentra las zapatillas que te acompañarán en cada paso!</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card shadow-sm">
+                        <img src="image/in.jpg" class="card-img-top" alt="Zapatillas" />
+                        <div class="card-body">
+                            <p class="card-text">Descubre nuestra colección, que cuenta con modelos para todos los gustos y necesidades. Las zapatillas que ofrecemos están elaboradas con materiales de alta calidad para garantizar tu comodidad durante todo el día.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="text-center mb-4 mt-5" id="zapa">Productos Disponibles</h1>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card shadow-sm hover-shadow-lg">
+                    <img src="image/z1.jpg" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapatilla Deportiva</h5>
+                        <p class="card-text">499Bs</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Zapatilla Deportiva" data-price="499" data-image="image/z1.jpg">
+                            <i class="bi bi-cart-plus me-2"></i>Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card shadow-sm hover-shadow-lg">
+                    <img src="image/z2.jpg" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapatilla Casual</h5>
+                        <p class="card-text">380Bs</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Zapatilla Casual" data-price="380" data-image="image/z2.jpg">
+                            <i class="bi bi-cart-plus me-2"></i>Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card shadow-sm hover-shadow-lg">
+                    <img src="image/Z33.png" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapatilla Running</h5>
+                        <p class="card-text">6850s</p>
+                        <div class="alert alert-warning" role="alert">
+                            Último en stock
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-name="Zapatilla Running" data-price="6850" data-image="image/z3.jpg">
+                            <i class="bi bi-cart-plus me-2"></i>Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card shadow-sm hover-shadow-lg">
+                    <img src="image/z4.jpg" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapatilla Running</h5>
+                        <p class="card-text">430Bs</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Zapatilla Running" data-price="430" data-image="image/z3.jpg">
+                            <i class="bi bi-cart-plus me-2"></i>Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card shadow-sm hover-shadow-lg">
+                    <img src="image/z5.png" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapatilla Running</h5>
+                        <p class="card-text">430Bs</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Zapatilla Running" data-price="430" data-image="image/z3.jpg">
+                            <i class="bi bi-cart-plus me-2"></i>Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card shadow-sm hover-shadow-lg">
+                    <img src="image/z6.png" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapatilla Running</h5>
+                        <p class="card-text">430Bs</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Zapatilla Running" data-price="430" data-image="image/z3.jpg">
+                            <i class="bi bi-cart-plus me-2"></i>Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card shadow-sm hover-shadow-lg">
+                    <img src="image/z7.jpg" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapatilla Running</h5>
+                        <p class="card-text">430Bs</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Zapatilla Running" data-price="430" data-image="image/z3.jpg">
+                            <i class="bi bi-cart-plus me-2"></i>Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card shadow-sm hover-shadow-lg">
+                    <img src="image/z8.png" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapatilla Running</h5>
+                        <p class="card-text">430Bs</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Zapatilla Running" data-price="430" data-image="image/z3.jpg">
+                            <i class="bi bi-cart-plus me-2"></i>Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card shadow-sm hover-shadow-lg">
+                    <img src="image/z9.jpg  " class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapatilla Running</h5>
+                        <p class="card-text">430Bs</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Zapatilla Running" data-price="430" data-image="image/z3.jpg">
+                            <i class="bi bi-cart-plus me-2"></i>Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 Shad-Store. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" title="Facebook" class="social-link">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" title="Twitter" class="social-link">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" title="Instagram" class="social-link">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" title="YouTube" class="social-link">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        document.addEventListener("DOMContentLoaded", function(){
+            const contentHolderHeight = document.querySelector(".content-holder").offsetHeight;
+            const imgHolderHeight = window.innerHeight;
+            const additionalScrollHeight = window.innerHeight;
+
+            const totalBodyHeight = contentHolderHeight + imgHolderHeight + additionalScrollHeight;
+            document.body.style.height =`${totalBodyHeight}px`;
+        });
+
+        ScrollTrigger.create({
+            trigger: ".website-content",
+            start: "-0.1% top",
+            end: "bottom bottom",
+            onEnter: () => {
+                gsap.set(".website-content", {position: 'absolute', top: '195%' });
+            },
+            onLeaveBack: () => {
+                gsap.set(".website-content", {position: 'fixed', top: '0' });
+            }
+        });
+
+        gsap.to(".header .letters:first-child", {
+            x: () => -innerWidth * 3,
+            scale: 10,
+            ease: "power2.inOut",
+            scrollTrigger: {
+                start: "top top",
+                end: "+=200%",
+                scrub: 1
+            }
+        });
+        
+        gsap.to(".header .letters:last-child", {
+            x: () => innerWidth * 3,
+            scale: 10,
+            ease: "power2.inOut",
+            scrollTrigger: {
+                start: "top top",
+                end: "+=200%",
+                scrub: 1
+            }
+        });
+
+        gsap.to(".img-holder", {
+            rotation: 0,
+            clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+            ease: "power2.inOut",
+            scrollTrigger:{
+                start: "top top",
+                end: `+=200%`,
+                scrub: 1
+            }
+        });
+        gsap.to(".img-holder img", {
+            scale:1,
+            
+            ease: "power2.inOut",
+            scrollTrigger:{
+                start: "top top",
+                end: `+=200%`,
+                scrub: 1
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+

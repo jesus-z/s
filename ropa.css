@@ -1,0 +1,163 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+            color: #f4f4f4;
+}
+.header {
+    position: relative;
+    background-image: url(image/r11.jpg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+    z-index: 1;
+}
+
+.header-content {
+    z-index: 2;
+    position: relative;
+    margin-left: 10%;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-content p {
+    font-size: 1rem;
+    margin-top: 20px;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.btn-learn-more {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.btn-learn-more:hover {
+    background-color: #d81b60;
+    color: white;
+    border-color: #d81b60;
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+
+}
+
+.header-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navbar */
+.navbar {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d81b60;
+}
+.product-section {
+    padding: 50px 0;
+}
+
+.product-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d81b60;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #2b2b2b;
+    color: #f4f4f4;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+footer {
+   
+    background-color: #300455;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-container {
+   
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    font-size: 24px;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    color: #00c9ed; /* Cambia el color al pasar el ratón (ejemplo: azul claro) */
+}
+.barra:hover{
+    transform: scale(1.2);
+    color: #ff0000; /* Cambia el color al pasar el ratón (ejemplo: azul claro) */
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shad-Store - Tienda de Productos Deportivos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="barra">Home</a>
+            <a href="contactos.html" class="barra">Contacts</a>
+            <a href="info.html" class="barra">Info</a>
+        </nav>
+    
+        <!-- Carrito Dropdown -->
+        <div class="dropdown">
+            <a href="#" class="carritoo text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-cart fs-4"></i> <!-- Ícono del carrito -->
+                <span id="cart-count" class="badge bg-danger">0</span> <!-- Número de productos -->
+            </a>
+    
+            <ul class="dropdown-menu dropdown-menu-end p-2 shadow" id="cart-items">
+                <!-- Los productos del carrito se mostrarán aquí -->
+                <li class="dropdown-item text-center">El carrito está vacío</li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <div class="list">
+            <div class="item">
+                <img src="image/messi.gif" alt="Messi">
+                <div class="content">
+                    <div class="author">Jesus</div>
+                    <div class="title">Equipamiento deportivo de alto rendimiento</div>
+                    <div class="topic">Shad-Store</div>
+                    <div class="des">
+                        En Shad-Store, llevamos tu pasión por el deporte al siguiente nivel. Descubre nuestra amplia selección de productos diseñados para maximizar tu rendimiento, desde ropa y calzado de última tecnología hasta equipo especializado para todo tipo de disciplinas.
+                    </div>
+                    <div class="buttons">
+                        <button onclick="location.href='#categories'">Categorias</button>
+                      
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/zapas.gif" alt="Zapatillas">
+                <div class="content">
+                    <div class="author">jesus</div>
+                    <div class="title">Zapatillas deportivas</div>
+                    <div class="topic">Running</div>
+                    <div class="des">
+                        Encuentra las mejores zapatillas para running y entrenamiento, con tecnología avanzada para tu comodidad y rendimiento.
+                    </div>
+                    <div class="buttons">
+                        <button onclick="window.location.href='productos.html'">Llevame ahi</button>
+                     
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/ropa.gif" alt="Ropa deportiva">
+                <div class="content">
+                    <div class="author">LUNDEV</div>
+                    <div class="title">Ropa Deportiva</div>
+                    <div class="topic">Fitness</div>
+                    <div class="des">
+                        Ropa de alta calidad que te mantiene cómodo durante todo tu entrenamiento. Innovación y estilo en cada prenda.
+                    </div>
+                    <div class="buttons">
+                        <button onclick="window.location.href='ropa.html'">Llevame ahi</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/f1.jpg" alt="Fútbol">
+                <div class="content">
+                    <div class="author">jesus</div>
+                    <div class="title">Articulos de gimnasio</div>
+                    <div class="topic">gym</div>
+                    <div class="des">
+                        Descubre nuestros productos diseñados para mejorar tu entrenamiento, desde balones hasta uniformes completos de las mejores marcas.
+                    </div>
+                    <div class="buttons">
+                        <button onclick="window.location.href='gym.html'">Llevame ahi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            <div class="item">
+                <img src="image/img1.jpg" alt="Imagen Producto">
+                <div class="content">
+                    <div class="title">Bienvenido a la tienda mas completa del mundo</div>
+                    <div class="description">Donde encontraras lo que buscas</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/zapatillas.jpg" alt="Zapatillas">
+                <div class="content">
+                    <div class="title">Zapatillas de Running</div>
+                    <div class="description">Comodidad y rendimiento</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/bak.png" alt="Mochilas">
+                <div class="content">
+                    <div class="title">Ropa e indumentaria deportivas</div>
+                    <div class="description">Practicidad y diseño</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/f1.jpg" alt="">
+                <div class="content">
+                    <div class="title">Articulos para entrenar </div>
+                    <div class="description">Para Ejercitar con material de élite</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+    </div>
+
+    <!-- Categorías de productos -->
+    <section class="product-categories" id="categories">
+        <h2>Categorías Destacadas</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="image/correr.jpg" alt="Running">
+                <h3>Running</h3>
+                <p>Descubre zapatillas y ropa para tus mejores carreras.</p>
+            </div>
+            <div class="category">
+                <img src="image/gym.jpg" alt="Gym">
+                <h3>Fitness y Gimnasio</h3>
+                <p>Equipos y accesorios para mejorar tu entrenamiento.</p>
+            </div>
+            <div class="category">
+                <img src="image/ropaa.jpg" alt="Fútbol">
+                <h3>Deportivos y demas</h3>
+                <p>Uniformes, balones y accesorios para brillar en la cancha.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ofertas Especiales -->
+    <section class="special-offers">
+        <h2>Ofertas Especiales</h2>
+        <div class="offers">
+            <div class="offer">
+                <img src="image/desc1.png" height="500px" alt="Oferta 1">
+            
+            </div>
+            <div class="offer">
+                <img src="image/desc2.jpg" alt="Oferta 2">
+        
+            </div>
+            <div class="offer">
+                <img src="image/desc3.jpg" alt="Oferta 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestras Marcas -->
+    <section class="our-brands">
+        <h2>Nuestras Marcas</h2>
+        <div class="brands">
+            <div class="brand">
+                <img src="image/nike.gif" alt="Nike">
+            </div>
+            <div class="brand">
+                <img src="image/adidas.gif" alt="Adidas">
+            </div>
+            <div class="brand">
+                <img src="image/puma.gif" alt="Puma">
+            </div>
+            <div class="brand">
+                <img src="image/under.gif" alt="Under Armour">
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog">
+        <h2>Últimos Artículos del Blog</h2>
+        <div class="blog-posts">
+            <div class="post">
+                <img src="image/c1.jpg" alt="Artículo 1">
+                <h3>Cómo Escoger el Mejor Outfit Para Tus Deportes Favoritos </h3>
+                <p>Te ayudamos a elegir los mejores conjuntos al igual que las mejores zapatillas según tu tipo de pisada y necesidades.</p>
+            </div>
+            <div class="post">
+                <img src="image/e1.jpg" alt="Artículo 2">
+                <h3>Guía Completa de Equipos para Entrenamiento en Casa</h3>
+                <p>Conoce los equipos imprescindibles para lograr un entrenamiento efectivo en casa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-items">
+            <div class="faq-item">
+                <h3>¿Cómo puedo realizar un pedido?</h3>
+                <p>Simplemente agrega los productos al carrito, ingresa tus datos y realiza el pago.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Realizan envíos internacionales?</h3>
+                <p>Sí, realizamos envíos a varios países. Consulta nuestra sección de envíos para más detalles.</p>
+            </div>
+        </div>
+    </section>
+
+
+<footer>
+    <div class="footer-container">
+        <p>© 2024 Shad-Store. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" title="Facebook" class="social-link">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" title="Twitter" class="social-link">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" title="Instagram" class="social-link">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" title="YouTube" class="social-link">
+                <i class="bi bi-youtube"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+    <script src="app.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>function loadCart() {
+    const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartItemsElement = document.getElementById('cart-items');
+    const cartCountElement = document.getElementById('cart-count');
+
+    // Actualizar cantidad total en el ícono
+    cartCountElement.textContent = storedCart.reduce((sum, item) => sum + item.quantity, 0);
+
+    // Actualizar dropdown
+    cartItemsElement.innerHTML = '';
+    if (storedCart.length === 0) {
+        cartItemsElement.innerHTML = '<li class="dropdown-item text-center">El carrito está vacío</li>';
+        return;
+    }
+
+    let total = 0;
+    storedCart.forEach((item, index) => {
+        total += item.price * item.quantity;
+        cartItemsElement.innerHTML += `
+            <li class="dropdown-item d-flex justify-content-between align-items-center">
+                ${item.name} (x${item.quantity})
+                <span>$${item.price * item.quantity}</span>
+                <button class="btn btn-sm btn-danger" onclick="removeFromCart(${index})">Eliminar</button>
+            </li>`;
+    });
+
+    cartItemsElement.innerHTML += `
+    <li><hr class="dropdown-divider"></li>
+    <li class="dropdown-item text-center"><strong>Total: $${total}</strong></li>`;
+}
+
+function removeFromCart(index) {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    loadCart();
+}
+
+// Llamar a `loadCart` al cargar la página
+loadCart();</script>
+</body>
+</html>
